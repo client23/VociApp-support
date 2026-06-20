@@ -18,6 +18,7 @@ Pages:
 - `terms.html`
 - `account-deletion.html`
 - `ai-and-data.html`
+- `store-disclosures.html`
 - `404.html`
 - `styles.css`
 - `.well-known/apple-app-site-association.sample.json`
@@ -37,6 +38,12 @@ Policy references used while drafting:
 - Google Play account deletion requirements: https://support.google.com/googleplay/android-developer/answer/13327111
 - Google Play AI-Generated Content policy: https://support.google.com/googleplay/android-developer/answer/14094294
 - Google Play Payments policy: https://support.google.com/googleplay/android-developer/answer/10281818
+
+Worldwide readiness notes:
+
+- The site now includes regional privacy language for EEA/UK/Swiss, California/US state privacy rights, Brazil/similar jurisdictions, minors, international processing, and a Store Disclosure Checklist.
+- Before worldwide launch, verify whether the App Store / Google Play listing developer name, seller address, and support contact exactly match the public policy pages and console metadata.
+- Consider legal review before launch in highly regulated regions or before adding additional SDKs, analytics, ads, social login, payments, or child-directed positioning.
 
 Local preview:
 

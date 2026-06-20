@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VociApp App Store and Google Play transparency disclosures.">
+    <title>VociApp Store Disclosures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="wrap">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">V</span><span>VociApp</span></a>
+            <div class="nav-links">
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="account-deletion.html">Delete Account</a>
+                <a href="ai-and-data.html">AI & Data</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </nav>
+
+        <article class="card stacked">
+            <span class="eyebrow">Store readiness</span>
+            <h1>Store Disclosure Checklist</h1>
+            <p class="meta">Transparency notes for users and store review. These disclosures summarize the current intended production behavior for privacy labels, Data safety, permissions, account deletion, AI, and billing.</p>
+
+            <div class="notice warning">
+                <h2>Important</h2>
+                <p>This page is not legal advice. Store forms and public disclosures must match the exact production app, SDKs, backend configuration, subscriptions, and data retention behavior at submission time.</p>
+            </div>
+
+            <h2>Public URLs to Enter in Store Consoles</h2>
+            <ul>
+                <li>Support URL: <a href="support.html">support.html</a></li>
+                <li>Privacy Policy URL: <a href="privacy-policy.html">privacy-policy.html</a></li>
+                <li>Account/Data Deletion URL for Google Play: <a href="account-deletion.html">account-deletion.html</a></li>
+                <li>AI/Data Safety explanation: <a href="ai-and-data.html">ai-and-data.html</a></li>
+                <li>Terms of Use: <a href="terms.html">terms.html</a></li>
+            </ul>
+
+            <h2>Likely App Store Privacy Data Types</h2>
+            <p>Based on the current VociApp feature set, the following data types may need to be declared when transmitted off-device or linked to an account:</p>
+            <ul>
+                <li>Contact Info: email address for account login and support.</li>
+                <li>User ID: Supabase authentication user ID and account-scoped identifiers.</li>
+                <li>User Content: decks, cards, notes, examples, imported vocabulary, OCR text, prompts, answers, and support content.</li>
+                <li>Purchases: subscription or entitlement status if paid tiers are enabled.</li>
+                <li>Usage Data: review activity, learning progress, AI quota counters, endpoint usage, sync status, and operational logs.</li>
+                <li>Diagnostics: errors, status metadata, and support diagnostics where collected.</li>
+                <li>Photos or Videos: only if selected images are transmitted off-device. If OCR image processing remains fully on-device and only recognized text is sent for AI/import, disclose the text as user content instead.</li>
+            </ul>
+            <p>Current public positioning: no third-party ads, no cross-app tracking, no sale of personal data.</p>
+
+            <h2>Likely Google Play Data Safety Categories</h2>
+            <ul>
+                <li>Personal info: email address and account identifiers.</li>
+                <li>App activity: learning progress, review logs, AI usage, sync/account events.</li>
+                <li>App info and performance: diagnostics and operational error metadata if collected.</li>
+                <li>Photos and videos: only if the production app uploads selected images off-device. Otherwise camera/photo access is local and user-initiated.</li>
+                <li>Files and docs or user content: imported CSV/text, OCR text, decks, cards, notes, and examples.</li>
+                <li>Financial info: normally not collected directly by VociApp if Apple/Google process payments and full card data is never received.</li>
+            </ul>
+
+            <h2>Permissions and Prominent Disclosure</h2>
+            <p>Camera/photo access should remain user-initiated for scan/import flows and be explained immediately before the platform permission prompt where practical. The disclosure should explain that selected images are used to recognize text and create vocabulary cards, and that AI-assisted extraction may send recognized text to backend AI processing.</p>
+
+            <h2>Account Deletion</h2>
+            <p>If account creation is available inside the app, both Apple and Google require a discoverable in-app account deletion path. Google Play also requires an external web resource. Use <a href="account-deletion.html">account-deletion.html</a> for the external web resource, and make sure the app itself links to account deletion from account/settings UI.</p>
+
+            <h2>AI Submission Notes</h2>
+            <p>AI features are optional study aids with quotas and server-side input limits. Store review notes should explain that AI is used for vocabulary explanations, answer feedback, verb support, context generation, and import enrichment; that harmful AI output can be reported; and that AI output is not authoritative.</p>
+
+            <h2>Billing Notes</h2>
+            <p>If Plus or Pro AI unlock digital features inside the iOS or Android app, use Apple In-App Purchase and Google Play Billing unless a specific regional entitlement or exception applies. Avoid in-app links or wording that directs users to non-platform payment methods unless that flow is explicitly allowed for the target storefront.</p>
+
+            <h2>Pre-Submission Checks for the Developer</h2>
+            <ul>
+                <li>Confirm the support email exists and is monitored.</li>
+                <li>Confirm this site is publicly reachable, non-geofenced, and not served as a PDF.</li>
+                <li>Confirm privacy policy and account deletion links are also reachable from inside the app.</li>
+                <li>Confirm Data Safety and App Privacy labels match the production app and all third-party SDKs.</li>
+                <li>Confirm no analytics, ads, crash reporting, or payment SDK was added without updating this site and store forms.</li>
+                <li>Confirm AI limits, tier names, subscriptions, and screenshots match production behavior.</li>
+            </ul>
+
+            <footer>
+                VociApp support contact: <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a><br>
+                Last updated: 2026-06-20
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
