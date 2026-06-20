@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "TEAMID.com.schmitdo.vociapp"
+        ],
+        "components": [
+          {
+            "/": "/account-deletion.html",
+            "comment": "Optional placeholder for future universal link handling. Replace TEAMID and paths before enabling."
+          }
+        ]
+      }
+    ]
+  }
+}

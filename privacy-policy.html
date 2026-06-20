@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VociApp privacy policy.">
+    <title>VociApp Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="wrap">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">V</span><span>VociApp</span></a>
+            <div class="nav-links">
+                <a href="support.html">Support</a>
+                <a href="account-deletion.html">Delete Account</a>
+                <a href="ai-and-data.html">AI & Data</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </nav>
+
+        <article class="card stacked">
+            <h1>Privacy Policy for VociApp</h1>
+            <p class="meta">Effective date: 2026-06-20</p>
+            <a class="secondary-link" href="index.html">Back to main page</a>
+
+            <p>VociApp ("the App") is developed and published by Dominik Schmitt ("we", "us", or "our"). This Privacy Policy explains what data VociApp processes, how it is used, when it is transmitted off your device, and how you can contact us or request deletion.</p>
+
+            <h2>Summary</h2>
+            <ul>
+                <li>VociApp is local-first: core learning data is stored on your device unless you use account sync or AI features.</li>
+                <li>An account is optional, but required for account sync and quota-bound AI features.</li>
+                <li>We do not sell your personal data.</li>
+                <li>We do not use third-party advertising SDKs.</li>
+                <li>We do not track you across apps or websites.</li>
+                <li>AI requests may send selected learning content, answers, prompts, or OCR text to Supabase Edge Functions and OpenAI for processing.</li>
+                <li>Camera/photo access is used only for user-initiated scan/import features.</li>
+                <li>Admin tooling is restricted to authorized administrators and is used for support, security, entitlement, and content operations.</li>
+            </ul>
+
+            <h2>Data We Process Locally on Your Device</h2>
+            <p>VociApp may store the following information locally in the app database or app storage:</p>
+            <ul>
+                <li>vocabulary decks and cards</li>
+                <li>front/back card text, examples, notes, imported vocabulary, and language metadata</li>
+                <li>verb metadata and verb forms</li>
+                <li>study settings, selected deck, study mode, daily learning settings, and app preferences</li>
+                <li>review logs, answer ratings, learning state, due dates, intervals, and mastery progress</li>
+                <li>sync cursor state and local account-scope state</li>
+                <li>temporary import, OCR, and AI enrichment results shown to you in the app</li>
+            </ul>
+            <p>Purpose: to provide vocabulary training, spaced repetition, imports, deck management, progress tracking, and app session restoration.</p>
+
+            <h2>Account and Authentication Data</h2>
+            <p>If you create or sign into an account, VociApp uses Supabase Auth. Account-related data may include:</p>
+            <ul>
+                <li>email address</li>
+                <li>authentication user ID</li>
+                <li>session tokens managed by Supabase Auth</li>
+                <li>profile status such as active, suspended, or banned</li>
+                <li>admin role information if you are an authorized administrator</li>
+            </ul>
+            <p>Purpose: authentication, account management, security, sync eligibility, support, and admin access control.</p>
+
+            <h2>Optional Sync Data</h2>
+            <p>When you are signed in and sync is eligible, VociApp may transmit account-scoped learning data to Supabase so that it can be restored or shared across your signed-in devices. This may include:</p>
+            <ul>
+                <li>decks, cards, examples, notes, language metadata, and template/subscription deck relationships</li>
+                <li>review logs, learning progress, mastered status, intervals, due dates, and user statistics</li>
+                <li>verb metadata, verb forms, and related review logs</li>
+                <li>settings needed to restore app behavior, including selected deck and study settings</li>
+                <li>sync status metadata and timestamps</li>
+            </ul>
+            <p>Guest-local data does not sync unless you choose to claim it into your signed-in account.</p>
+
+            <h2>AI Features and AI Quota Data</h2>
+            <p>VociApp includes optional AI-assisted features. Depending on the feature you use, selected content may be sent to Supabase Edge Functions and OpenAI for processing. This may include:</p>
+            <ul>
+                <li>card text, example sentences, language pair, and answer text for explanations or answer feedback</li>
+                <li>terms or verbs for detection, analysis, conjugation, and enrichment</li>
+                <li>OCR text or imported vocabulary text for extraction and import assistance</li>
+                <li>AI request metadata such as endpoint, user ID, quota category, token or cost estimates, status, timestamps, and errors</li>
+            </ul>
+            <p>Purpose: to provide AI explanations, study help, answer feedback, vocabulary extraction, context generation, import enrichment, quota enforcement, fraud prevention, cost control, and operational diagnostics.</p>
+            <p>AI output may be inaccurate, incomplete, or inappropriate. Do not rely on AI output as the sole authoritative source for exams, professional translation, legal, medical, financial, or safety-critical decisions.</p>
+            <p>For more detail, read <a href="ai-and-data.html">AI & Data Safety</a>.</p>
+
+            <h2>Camera, Photos, OCR, and Imported Files</h2>
+            <p>VociApp may request camera or photo access when you choose to scan or import learning material. The app uses OCR to recognize text and help create vocabulary cards. Images are selected or captured by you. OCR and import results may be stored locally as part of decks/cards if you choose to save them.</p>
+            <p>If you use AI-assisted extraction or enrichment, recognized text or selected content may be sent to AI processing as described above. VociApp does not use camera or photo access for background tracking or advertising.</p>
+
+            <h2>Admin Console and Support Operations</h2>
+            <p>Authorized administrators may access an admin interface for support and operational purposes. Admin functionality may include:</p>
+            <ul>
+                <li>viewing account status, role, email, and support snapshots</li>
+                <li>updating account status or role where permitted</li>
+                <li>reviewing and adjusting AI entitlements and usage resets</li>
+                <li>managing decks, cards, templates, subscriber decks, and soft deletion</li>
+                <li>reviewing platform, usage, and cost summaries</li>
+                <li>recording admin audit logs for accountability</li>
+            </ul>
+            <p>Purpose: support, abuse prevention, security, billing/entitlement support, content maintenance, and service reliability.</p>
+
+            <h2>Support Communications</h2>
+            <p>If you contact us by email, we process the information you include, such as your email address, device details, app version, screenshots, and problem description.</p>
+            <p>Purpose: to respond to support requests, investigate bugs, handle privacy requests, and improve reliability.</p>
+
+            <h2>Purchases and Subscriptions</h2>
+            <p>VociApp may offer optional paid tiers such as Plus or Pro AI. If paid tiers are sold in the App Store or Google Play, purchases, subscriptions, renewal, cancellation, refunds, and payment methods are handled by the relevant platform. We do not receive your full payment card details from Apple or Google.</p>
+            <p>VociApp may process entitlement status, tier, quota limits, and usage counters to decide which features are available to your account.</p>
+
+            <h2>Data We Do Not Sell or Use for Tracking</h2>
+            <ul>
+                <li>We do not sell personal data.</li>
+                <li>We do not use third-party advertising SDKs.</li>
+                <li>We do not use your learning data for cross-app or cross-site tracking.</li>
+                <li>We do not use your camera or photos for advertising.</li>
+            </ul>
+
+            <h2>Third-Party Service Providers</h2>
+            <p>VociApp may use the following service providers:</p>
+            <ul>
+                <li>Supabase for authentication, database sync, Edge Functions, and storage of account-scoped backend data.</li>
+                <li>OpenAI for optional AI processing when you use AI-assisted features.</li>
+                <li>Apple and Google for app distribution, platform billing, subscription management, crash/reporting infrastructure they provide at the platform level, and store operations.</li>
+                <li>Google ML Kit OCR libraries for on-device OCR language support in scan/import flows.</li>
+                <li>Your email provider and our email provider if you contact support.</li>
+            </ul>
+            <p>These providers process data under their own terms and privacy policies as applicable.</p>
+
+            <h2>Security</h2>
+            <p>We use reasonable technical and organizational measures for the nature of the app, including local app sandboxing, Supabase authentication, database access controls, service-role-only backend operations for sensitive RPCs, and HTTPS/TLS transport for network requests. No method of storage or transmission can be guaranteed to be completely secure.</p>
+
+            <h2>Retention</h2>
+            <ul>
+                <li>Local app data remains on your device until you delete it in the app, reset local data where available, or uninstall the app.</li>
+                <li>Synced account data remains in Supabase until you delete it, request deletion, or we remove it under our retention, support, security, or legal processes.</li>
+                <li>AI usage logs and admin audit logs may be retained for security, cost control, abuse prevention, support, and legal compliance.</li>
+                <li>Support emails are retained for as long as reasonably needed to handle the request and related follow-up.</li>
+                <li>Some data may be retained where required for security, fraud prevention, billing, dispute resolution, legal compliance, or legitimate backup processes.</li>
+            </ul>
+
+            <h2>Deletion and Privacy Choices</h2>
+            <p>You can delete local data by deleting the app or using in-app reset/delete features where available. You can request deletion of your VociApp account and associated server-side data through <a href="account-deletion.html">Account Deletion</a>.</p>
+            <p>If you have an active App Store or Google Play subscription, account deletion does not automatically cancel the platform subscription. Manage subscriptions in your Apple ID or Google Play account settings.</p>
+
+            <h2>Your Rights</h2>
+            <p>Depending on where you live, you may have rights to request access, correction, deletion, restriction, portability, or objection to certain processing of personal data. Contact us at <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a>. We will review and respond in accordance with applicable law.</p>
+
+            <h2>Children's Privacy</h2>
+            <p>VociApp is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, contact us so we can review and take appropriate action.</p>
+
+            <h2>International Processing</h2>
+            <p>Service providers such as Supabase, OpenAI, Apple, Google, and email providers may process data in countries outside your own. Where required, we rely on appropriate legal mechanisms and service provider commitments for international data transfers.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the effective date on this page.</p>
+
+            <h2>Contact</h2>
+            <p>Dominik Schmitt<br>Email: <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a></p>
+
+            <footer>
+                VociApp support contact: <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a><br>
+                Last updated: 2026-06-20
+            </footer>
+        </article>
+    </main>
+</body>
+</html>

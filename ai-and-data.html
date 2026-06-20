@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VociApp AI features, data safety, and reporting information.">
+    <title>VociApp AI & Data Safety</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="wrap">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">V</span><span>VociApp</span></a>
+            <div class="nav-links">
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="account-deletion.html">Delete Account</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </nav>
+
+        <article class="card stacked">
+            <span class="eyebrow">AI transparency</span>
+            <h1>AI & Data Safety</h1>
+            <p class="meta">How VociApp uses AI, what data may be sent for processing, and how to report issues.</p>
+
+            <h2>AI Features in VociApp</h2>
+            <p>VociApp may provide optional AI-assisted features, including:</p>
+            <ul>
+                <li>answer feedback during study</li>
+                <li>mnemonics, usage examples, synonyms, or etymology-style learning help</li>
+                <li>term analysis and verb detection</li>
+                <li>verb conjugation support</li>
+                <li>context generation for vocabulary</li>
+                <li>AI-assisted CSV/OCR vocabulary extraction and import enrichment</li>
+                <li>admin-assisted deck enrichment and quality checks</li>
+            </ul>
+
+            <h2>What May Be Sent to AI Processing</h2>
+            <p>Depending on the feature, VociApp may send selected content to a Supabase Edge Function and then to OpenAI, such as:</p>
+            <ul>
+                <li>the word, phrase, verb, or card you asked about</li>
+                <li>your answer and the expected answer for feedback</li>
+                <li>deck language pair and context needed to generate a useful response</li>
+                <li>recognized OCR text or imported text you selected for AI-assisted extraction</li>
+                <li>technical request metadata needed for quota enforcement, diagnostics, and cost control</li>
+            </ul>
+
+            <h2>AI Quotas and Economic Guardrails</h2>
+            <p>AI use is quota-bound. Current server-side tiers are designed to prevent abuse and uncontrolled cost exposure:</p>
+            <div class="table-grid" role="table" aria-label="AI quota tiers">
+                <div>Tier</div><div>Lower-cost AI help</div><div>Expensive AI import/analysis</div>
+                <div>Free</div><div>Small daily help quota</div><div>Blocked</div>
+                <div>Plus</div><div>Larger daily help quota</div><div>Blocked</div>
+                <div>Pro AI</div><div>Higher daily help quota</div><div>Limited daily quota</div>
+                <div>Admin</div><div>Restricted operational override</div><div>Restricted operational override</div>
+            </div>
+            <p>Large prompts and OCR text are limited before processing. Server-side checks enforce daily and per-minute limits.</p>
+
+            <h2>AI Output Is Not Guaranteed</h2>
+            <p>AI-generated content can be wrong, incomplete, biased, or inappropriate. VociApp is a study aid, not an authoritative dictionary, certified translation tool, professional tutor, exam authority, legal adviser, medical adviser, financial adviser, or safety-critical system.</p>
+
+            <h2>Prohibited Uses</h2>
+            <p>Do not use VociApp AI features to create, request, or distribute:</p>
+            <ul>
+                <li>harassment, bullying, hate, sexual, exploitative, or violent content</li>
+                <li>content involving child exploitation or abuse</li>
+                <li>deceptive, fraudulent, impersonation, or deepfake content</li>
+                <li>malicious code, evasion instructions, or abuse-enabling content</li>
+                <li>official documents, credentials, or statements intended to deceive</li>
+                <li>content that violates applicable law or the rights of others</li>
+            </ul>
+
+            <h2>Report AI Problems</h2>
+            <p>If AI output is harmful, offensive, unsafe, clearly wrong, or violates these rules, report it to <a href="mailto:vociapp.support@gmail.com?subject=VociApp%20AI%20Output%20Report">vociapp.support@gmail.com</a>. Include:</p>
+            <ul>
+                <li>the feature used</li>
+                <li>the approximate time and date</li>
+                <li>the prompt or card text, if you are comfortable sharing it</li>
+                <li>the problematic output</li>
+                <li>why it is harmful, wrong, or unsafe</li>
+            </ul>
+
+            <h2>Privacy and AI</h2>
+            <p>Do not submit sensitive personal information, secrets, passwords, health information, financial information, private documents, or information about other people into AI prompts or imports unless you are comfortable with it being processed by the service providers used to answer your request.</p>
+            <p>For complete data handling details, read the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+            <footer>
+                VociApp support contact: <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a><br>
+                Last updated: 2026-06-20
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
