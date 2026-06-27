@@ -22,7 +22,7 @@
 
         <article class="card stacked">
             <h1>Privacy Policy for VociApp</h1>
-            <p class="meta">Effective date: 2026-06-20</p>
+            <p class="meta">Effective date: 2026-06-27</p>
             <a class="secondary-link" href="index.html">Back to main page</a>
 
             <p>VociApp ("the App") is developed and published by Dominik Schmitt ("we", "us", or "our"). This Privacy Policy explains what data VociApp processes, how it is used, when it is transmitted off your device, and how you can contact us or request deletion.</p>
@@ -34,10 +34,23 @@
                 <li>We do not sell your personal data.</li>
                 <li>We do not use third-party advertising SDKs.</li>
                 <li>We do not track you across apps or websites.</li>
+                <li>App Store privacy disclosures for VociApp are limited to account, purchase, learning, usage, and diagnostic data categories that support the app.</li>
                 <li>AI requests may send selected learning content, answers, prompts, or OCR text to Supabase Edge Functions and OpenAI for processing.</li>
-                <li>Camera/photo access is used only for user-initiated scan/import features.</li>
+                <li>Camera/photo access is used only for user-initiated scan/import features. Original images are not collected by us in the normal OCR flow.</li>
                 <li>Admin tooling is restricted to authorized administrators and is used for support, security, entitlement, and content operations.</li>
             </ul>
+
+            <h2>App Store Privacy Disclosure Categories</h2>
+            <p>For App Store privacy disclosures, VociApp may collect and link the following data to your account or identity when you sign in, sync, purchase, use AI features, or contact support:</p>
+            <ul>
+                <li>Contact Information: email address.</li>
+                <li>Identifiers: user ID or account ID.</li>
+                <li>Purchases: purchase history, subscription status, product tier, and entitlement status.</li>
+                <li>User Content: vocabulary decks, cards, examples, notes, imported/OCR text, prompts, answers, and other learning content you create or submit.</li>
+                <li>Usage Data: product interaction and other usage data such as learning progress, review activity, feature usage, quotas, and timestamps.</li>
+                <li>Diagnostics: other diagnostic data such as backend errors, operational logs, request metadata, and support diagnostics when needed for reliability, abuse prevention, cost control, or support.</li>
+            </ul>
+            <p>VociApp does not use these data types for tracking across apps or websites, advertising, or data brokerage. We do not collect payment card numbers, precise location, contacts, browsing history, advertising data, or device advertising identifiers.</p>
 
             <h2>Data We Process Locally on Your Device</h2>
             <p>VociApp may store the following information locally in the app database or app storage:</p>
@@ -83,12 +96,13 @@
                 <li>AI request metadata such as endpoint, user ID, quota category, token or cost estimates, status, timestamps, and errors</li>
             </ul>
             <p>Purpose: to provide AI explanations, study help, answer feedback, vocabulary extraction, context generation, import enrichment, quota enforcement, fraud prevention, cost control, and operational diagnostics.</p>
+            <p>AI request content and usage metadata are treated as app functionality, user content, usage data, or diagnostic data depending on context. They are not used by VociApp for advertising or cross-app tracking.</p>
             <p>AI output may be inaccurate, incomplete, or inappropriate. Do not rely on AI output as the sole authoritative source for exams, professional translation, legal, medical, financial, or safety-critical decisions.</p>
             <p>For more detail, read <a href="ai-and-data.html">AI & Data Safety</a>.</p>
 
             <h2>Camera, Photos, OCR, and Imported Files</h2>
-            <p>VociApp may request camera or photo access when you choose to scan or import learning material. The app uses OCR to recognize text and help create vocabulary cards. Images are selected or captured by you. OCR and import results may be stored locally as part of decks/cards if you choose to save them.</p>
-            <p>If you use AI-assisted extraction or enrichment, recognized text or selected content may be sent to AI processing as described above. VociApp does not use camera or photo access for background tracking or advertising.</p>
+            <p>VociApp may request camera or photo access when you choose to scan or import learning material. The app uses on-device OCR to recognize text and help create vocabulary cards. Images are selected or captured by you. In the normal scan/import flow, the original image is processed locally and is not uploaded to our backend.</p>
+            <p>Recognized text, imported file contents, and import results may be stored locally as part of decks/cards if you choose to save them. If you use AI-assisted extraction or enrichment, recognized text or selected content may be sent to AI processing as described above. VociApp does not use camera or photo access for background tracking or advertising.</p>
 
             <h2>Admin Console and Support Operations</h2>
             <p>Authorized administrators may access an admin interface for support and operational purposes. Admin functionality may include:</p>
@@ -108,7 +122,7 @@
 
             <h2>Purchases and Subscriptions</h2>
             <p>VociApp may offer optional paid tiers such as Plus or Pro AI. If paid tiers are sold in the App Store or Google Play, purchases, subscriptions, renewal, cancellation, refunds, and payment methods are handled by the relevant platform. We do not receive your full payment card details from Apple or Google.</p>
-            <p>VociApp may process entitlement status, tier, quota limits, and usage counters to decide which features are available to your account.</p>
+            <p>VociApp may process purchase history and entitlement data such as store, product ID, tier, subscription status, transaction identifiers, hashed purchase tokens, subscription expiration, quota limits, and usage counters to validate purchases and decide which features are available to your account.</p>
 
             <h2>Data We Do Not Sell or Use for Tracking</h2>
             <ul>
@@ -169,7 +183,7 @@
 
             <footer>
                 VociApp support contact: <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a><br>
-                Last updated: 2026-06-20
+                Last updated: 2026-06-27
             </footer>
         </article>
     </main>
