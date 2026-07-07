@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Request deletion of your VociApp account and associated data.">
+    <meta name="description" content="Delete your VociApp account and associated account data.">
     <title>VociApp Account Deletion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,29 +22,41 @@
 
         <article class="card stacked">
             <span class="eyebrow">Account deletion</span>
-            <h1>Request deletion of your VociApp account</h1>
-            <p class="meta">Use this page if you want to delete your VociApp account and associated server-side account data.</p>
+            <h1>Delete your VociApp account</h1>
+            <p class="meta">VociApp provides an in-app account deletion flow for signed-in users and this page as an external deletion resource if you no longer have access to the app.</p>
 
             <div class="notice warning">
                 <h2>Important</h2>
-                <p>Deleting your VociApp account removes account-scoped server-side data where deletion is legally and technically possible. It does not automatically cancel an App Store or Google Play subscription. Manage active subscriptions in your Apple ID or Google Play account settings before or after requesting deletion.</p>
+                <p>Deleting your VociApp account permanently removes the account and account-scoped server-side learning data where deletion is legally and technically possible. It does not automatically cancel an App Store or Google Play subscription. Manage active subscriptions in your Apple ID or Google Play account settings.</p>
             </div>
 
-            <h2>How to Request Deletion</h2>
+            <h2>Delete Your Account in the App</h2>
+            <ol>
+                <li>Open VociApp and sign in to the account you want to delete.</li>
+                <li>Open <strong>Account</strong>.</li>
+                <li>Scroll to <strong>Delete account</strong>.</li>
+                <li>Read the deletion and subscription notice.</li>
+                <li>Confirm the final deletion step by typing <strong>DELETE</strong>.</li>
+            </ol>
+            <p>The in-app flow deletes the VociApp account, account profile, synced cloud data, AI entitlement and quota records, and local account-scoped data on the current device. Guest-local data that was never assigned to the account is not deleted by this account deletion flow.</p>
+
+            <h2>If You Cannot Access the App</h2>
             <ol>
                 <li>Email <a href="mailto:vociapp.support@gmail.com?subject=VociApp%20Account%20Deletion%20Request">vociapp.support@gmail.com</a> with the subject line <strong>VociApp Account Deletion Request</strong>.</li>
                 <li>Send the request from the email address used for your VociApp account, if possible.</li>
                 <li>Include the VociApp account email address and state that you want your account deleted.</li>
                 <li>Do not send your password. We will never ask for your password by email.</li>
             </ol>
+            <p>We may need to verify that the request comes from the account holder before completing a web/email deletion request.</p>
 
             <h2>What Will Be Deleted</h2>
-            <p>For a verified account deletion request, we will delete or anonymize account-associated server-side data where legally and technically possible, including:</p>
+            <p>For an in-app deletion or verified deletion request, we delete or anonymize account-associated server-side data where legally and technically possible, including:</p>
             <ul>
-                <li>VociApp account/profile records</li>
+                <li>VociApp account and profile records</li>
                 <li>synced decks, cards, review logs, learning progress, settings, stats, and related account-scoped learning data</li>
-                <li>AI entitlement records and non-essential AI usage records linked to the account where deletion is permitted</li>
+                <li>AI entitlement records, quota records, and non-essential AI usage records linked to the account where deletion is permitted</li>
                 <li>deck subscription relationships and account-specific synced content relationships</li>
+                <li>local account-scoped data on the device where the in-app deletion is performed</li>
             </ul>
 
             <h2>What May Be Retained</h2>
@@ -58,24 +70,23 @@
             </ul>
 
             <h2>Local Device Data</h2>
-            <p>Account deletion affects server-side account data. Data stored only on your device may remain until you delete it locally. To remove local data, delete the app from your device or use available in-app delete/reset features.</p>
+            <p>The in-app deletion flow removes local account-scoped data on the current device after the server-side deletion succeeds. Data stored only as guest-local data may remain until you delete it locally, reset local data where available, or uninstall the app.</p>
 
             <h2>Guest-Local Data</h2>
             <p>If you used VociApp without an account, there may be no server-side account data to delete. Guest-local data is stored on your device and can be removed by deleting local data or uninstalling the app.</p>
 
             <h2>Expected Timing</h2>
-            <p>We aim to acknowledge deletion requests within 30 days where practical and to complete verified deletion requests within a reasonably quick period required by applicable law. Complex requests, identity verification, backup expiration, legal retention, fraud prevention, or platform billing dependencies may take longer.</p>
-            <p>Verification may be required to protect your account from unauthorized deletion. We will not ask for your password.</p>
+            <p>The in-app deletion flow is designed to complete immediately when the device is online and the backend is available. Web/email deletion requests may take longer because account-holder verification can be required. Complex requests, backup expiration, legal retention, fraud prevention, or platform billing dependencies may also take longer.</p>
 
             <h2>Subscriptions Before Deletion</h2>
-            <p>If you have an active App Store or Google Play subscription, cancel it through Apple or Google if you do not want renewal. Deleting your VociApp account does not control Apple ID or Google Play billing records.</p>
+            <p>If you have an active App Store or Google Play subscription, cancel it through Apple or Google if you do not want renewal. Deleting your VociApp account does not control Apple ID or Google Play billing records. Apple subscriptions can be managed at <a href="https://apps.apple.com/account/subscriptions">https://apps.apple.com/account/subscriptions</a>.</p>
 
             <h2>Privacy Policy</h2>
             <p>For broader data handling, retention, and privacy rights information, read the <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
             <footer>
                 VociApp support contact: <a href="mailto:vociapp.support@gmail.com">vociapp.support@gmail.com</a><br>
-                Last updated: 2026-06-20
+                Last updated: 2026-07-07
             </footer>
         </article>
     </main>

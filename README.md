@@ -65,4 +65,4 @@ Notes:
 
 - The site is written as static HTML/CSS to keep hosting simple and privacy-safe.
 - No analytics, cookies, forms, or third-party scripts are embedded.
-- `account-deletion.html` is designed to satisfy Google Play's external account deletion web resource requirement, but the in-app deletion path still needs to exist in the app itself for full compliance.
+- `account-deletion.html` is designed to satisfy Google Play's external account deletion web resource requirement. The client app also includes an in-app Account > Delete account flow for Apple and Google compliance.

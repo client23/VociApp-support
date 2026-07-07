@@ -66,7 +66,7 @@
             <p>Camera/photo access should remain user-initiated for scan/import flows and be explained immediately before the platform permission prompt where practical. The disclosure should explain that selected images are used to recognize text and create vocabulary cards, and that AI-assisted extraction may send recognized text to backend AI processing.</p>
 
             <h2>Account Deletion</h2>
-            <p>If account creation is available inside the app, both Apple and Google require a discoverable in-app account deletion path. Google Play also requires an external web resource. Use <a href="account-deletion.html">account-deletion.html</a> for the external web resource, and make sure the app itself links to account deletion from account/settings UI.</p>
+            <p>VociApp now provides a discoverable in-app deletion path from Account &gt; Delete account for signed-in users. The flow requires final confirmation, deletes the account and account-scoped cloud data, clears local account-scoped data on the current device, and warns that Apple/Google subscriptions must be managed separately. Use <a href="account-deletion.html">account-deletion.html</a> as the external web resource for users who cannot access the app and for Google Play requirements.</p>
 
             <h2>AI Submission Notes</h2>
             <p>AI features are optional study aids with quotas and server-side input limits. Store review notes should explain that AI is used for vocabulary explanations, answer feedback, verb support, context generation, and import enrichment; that harmful AI output can be reported; and that AI output is not authoritative.</p>
