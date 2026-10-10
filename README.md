@@ -2,6 +2,12 @@
 
 Static public support website for VociApp.
 
+Note: as of the domtelier.com legal-pages migration, `https://domtelier.com/apps/vociapp/{privacy,support,account-deletion,ai-data}`
+are the URLs configured in App Store Connect metadata and linked in-app. This
+site is no longer the source of truth for those four pages, but stays live as
+a fallback and still hosts `store-disclosures.html`, which has no equivalent
+on domtelier.com yet.
+
 Purpose:
 
 - App Store support URL
